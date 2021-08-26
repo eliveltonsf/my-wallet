@@ -12,11 +12,14 @@ export const Container = styled.div`
 
   ::-webkit-scrollbar {
     width: 10px;
-    /* margin-left: 10px; */
   }
 
   ::-webkit-scrollbar-thumb{
    background-color: ${props => props.theme.colors.secondary};
    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-track{
+   background-color: ${props => props.theme.colors.tertiary};
   }
 `;
