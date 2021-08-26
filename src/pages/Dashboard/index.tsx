@@ -11,6 +11,7 @@ import ListMounth from '../../utils/months'
 
 import happyImg from '../../assets/happy.svg'
 import sadImg from '../../assets/sad.svg'
+import grinningImg from '../../assets/grinning.svg'
 
 import {
   Container,
@@ -110,7 +111,7 @@ const Dashboard: React.FC = () => {
         title: "Ufaa!",
         description: "Neste mês você gastou exatamente o que ganhou.",
         footerText: "Tenha cuidado, No próximo tente poupar o seu dinheiro.",
-        icon: happyImg
+        icon: grinningImg
       }
     } else {
       return {
