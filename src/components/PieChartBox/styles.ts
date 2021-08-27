@@ -24,10 +24,6 @@ export const SideLeft =  styled.aside`
   }
 `;
 
-export const SideRight =  styled.main`
-
-`;
-
 export const LegendContainer =  styled.ul`
   list-style: none;
 
@@ -62,7 +58,7 @@ export const Legend =  styled.li<ILendendProps>`
     height: 40px;
     border-radius: 5px;
 
-    font-size: 18px;
+    font-size: 14px;
     line-height: 40px;
     text-align: center;
   }
@@ -70,5 +66,10 @@ export const Legend =  styled.li<ILendendProps>`
   >span{
     margin-left: 5px;
   }
+`;
 
+export const SideRight =  styled.main`
+  display: flex;
+  flex: 1;
+  justify-content: center;
 `;
