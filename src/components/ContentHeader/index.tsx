@@ -11,10 +11,7 @@ interface IContentHeaderProps {
 
 const ContentHeader: React.FC<IContentHeaderProps> = ({
   title, lineColor, children
-}) => {
-
-
-  return (
+}) =>  (
     <Container >
       <TitleContainer lineColor={lineColor}>
         <h1>{title}</h1>
@@ -24,6 +21,5 @@ const ContentHeader: React.FC<IContentHeaderProps> = ({
       </Controllers>
     </Container>
   )
-}
 
 export default ContentHeader;

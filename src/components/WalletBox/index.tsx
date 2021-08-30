@@ -33,6 +33,7 @@ const WalletBox: React.FC<IWalletBoxProps> = ({
 }) => {
 
   const IconSelected = getKeyValue(iconList)(icon as string);
+  
   return (
     <Container color={color}>
       <span>{title}</span>
