@@ -11,6 +11,10 @@ export const Container = styled.div`
 
  margin-bottom: 25px;
 
+ @media(max-width: 320px){
+  flex-direction: column;
+ }
+
 `;
 
 export const TitleContainer = styled.div<ITitleContainerProps>`
@@ -26,11 +30,31 @@ export const TitleContainer = styled.div<ITitleContainerProps>`
     border-bottom: 10px solid ${props => props.lineColor};
    }
  }
+
+  @media(max-width: 400px){
+   > h1 {
+     font-size: 20px;
+
+    &::after{
+      content: '';
+      display:block;
+      width: 55px;
+      border-bottom: 5px solid ${props => props.lineColor};
+    }
+   }
+  }
 `;
 
 
 export const Controllers = styled.div`
   display: flex;
+
+  @media(max-width: 320px){
+    width: 100%;
+
+    justify-content: space-between;
+    margin-top: 20px;
+  }
 
 `;
 

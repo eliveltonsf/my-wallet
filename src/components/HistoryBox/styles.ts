@@ -6,7 +6,7 @@ interface ILendendProps {
 
 export const Container =  styled.div`
   width: 100%;
-  height: 340px;
+  height: auto;
 
   display: flex;
   flex-direction: column;
@@ -27,7 +27,13 @@ export const Header = styled.header`
   >h2{
       margin-bottom: 20px;
       padding-left: 18px;
+
+      
     }
+    @media(max-width: 1200px)  {
+      flex-direction: column;
+    }
+   
 `;
 
 export const LegendContainer =  styled.ul`
@@ -57,7 +63,7 @@ export const Legend =  styled.li<ILendendProps>`
   align-items: center;
 
   margin-bottom: 7px;
-  margin-left: 7px;
+  margin-left: 18px;
 
   >div{
     background-color: ${props=> props.color};
@@ -73,6 +79,13 @@ export const Legend =  styled.li<ILendendProps>`
 
   >span{
     margin-left: 5px;
+  }
+
+  @media(max-width: 1280px)  {
+    >div{
+      width: 30px;
+      height: 30px;
+    }
   }
 `;
 

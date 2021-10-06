@@ -10,7 +10,7 @@ import {
   Container,
   Profile,
   Welcome,
-  UserName
+  UserName,
 } from './styles'
 
 const MainHeader: React.FC = () => {

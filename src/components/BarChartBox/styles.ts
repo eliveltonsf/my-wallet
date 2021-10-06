@@ -6,7 +6,7 @@ interface ILendendProps {
 
 export const Container = styled.div`
   width: 48%;
-  height: 260px;
+  height: auto;
 
   margin: 10px 0;
   background-color: ${props => props.theme.colors.tertiary};
@@ -15,6 +15,14 @@ export const Container = styled.div`
   border-radius: 7px;
 
   display: flex;
+
+  @media(max-width: 1200px){
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: auto;
+  }
   
 `;
 
@@ -45,6 +53,11 @@ export const LegendContainer =  styled.ul`
   ::-webkit-scrollbar-track{
    background-color: ${props => props.theme.colors.tertiary};
   }
+
+  @media(max-width: 1200px){
+    display: flex;
+    height: auto;
+  }
 `;
 
 export const Legend =  styled.li<ILendendProps>`
@@ -52,6 +65,7 @@ export const Legend =  styled.li<ILendendProps>`
   align-items: center;
   margin-top: 7px;
   font-size: 16px;
+  margin-left: 10px;
 
   >div{
     background-color: ${props=> props.color};
@@ -67,6 +81,16 @@ export const Legend =  styled.li<ILendendProps>`
 
   >span{
     margin-left: 5px;
+  }
+
+  @media(max-width: 1200px){
+    > div{
+      width: 30px;
+      height: 30px;
+      font-size: 10px;
+      line-height: 30px;
+    }
+   
   }
 `;
 
